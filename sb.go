@@ -40,7 +40,7 @@ func (s *SingBox) Start(basePath, configPath string) error {
 
 	C.SetBasePath(basePath)
 
-	instance, cancel, err := create(filepath.Join(configPath))
+	instance, cancel, err := create(basePath)
 	if err != nil {
 		return err
 	}
