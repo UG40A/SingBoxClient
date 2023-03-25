@@ -49,7 +49,7 @@ function buildMac() {
 
 function buildWin() {
     echo "start build win-amd64"
-    rsrc -manifest build/meta/win/sbox.exe.manifest -ico icon/logo.ico -o sbox.exe.syso
+    rsrc.exe -manifest build/meta/win/sbox.exe.manifest -ico icon/logo.ico -o sbox.exe.syso
     # brew info mingw-w64
     $(env GOOS=windows GOARCH=amd64 CGO_ENABLED=1 CC="x86_64-w64-mingw32-gcc" $gobuild -ldflags -H=windowsgui -o build/SingBox.exe ./)
 
