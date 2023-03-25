@@ -51,12 +51,12 @@ function buildWin {
     echo "start build win-amd64"
     rsrc.exe -manifest build/meta/win/sbox.exe.manifest -ico icon/logo.ico -o sbox.exe.syso
     # brew info mingw-w64
-    $(env GOOS=windows GOARCH=amd64 CGO_ENABLED=1 CC="x86_64-w64-mingw32-gcc" $gobuild -ldflags -H=windowsgui -o build/SingBox.exe ./)
+    $(env GOOS=windows GOARCH=amd64 CGO_ENABLED=1 CC="x86_64-w64-mingw32-gcc" $gobuild -ldflags -H=windowsgui -o SingBox.exe ./)
 
-    (cd build && zip -r SingBox-win-amd64.zip SingBox.exe 1>/dev/null)
+
 
     rm sbox.exe.syso
-    rm build/SingBox.exe
+
     echo "success !"
 }
 
