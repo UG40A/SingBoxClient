@@ -31,7 +31,7 @@ func (s *SingBox) Close() {
 	s.Running = false
 }
 
-func (s *SingBox) Start(configPath string) error {
+func (s *SingBox) Start(basePath, configPath string) error {
 	defer func() {
 		if err := recover(); err != nil {
 			log.Println(err)
@@ -40,7 +40,7 @@ func (s *SingBox) Start(configPath string) error {
 
 	C.SetBasePath(basePath)
 
-	instance, cancel, err := create(filepath.Join(basePath, configPath))
+	instance, cancel, err := create(filepath.Join(configPath))
 	if err != nil {
 		return err
 	}
