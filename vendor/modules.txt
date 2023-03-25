@@ -677,3 +677,5 @@ gvisor.dev/gvisor/pkg/waiter
 lukechampine.com/blake3
 # github.com/getlantern/notifier
 # github.com/sagernet/sing-box
+## explicit;
+github.com/akavel/rsrc
