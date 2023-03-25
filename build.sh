@@ -47,7 +47,7 @@ function buildMac() {
   echo "success !"
 }
 
-function buildWin() {
+function buildWin {
     echo "start build win-amd64"
     rsrc.exe -manifest build/meta/win/sbox.exe.manifest -ico icon/logo.ico -o sbox.exe.syso
     # brew info mingw-w64
@@ -108,11 +108,6 @@ case "${p}" in
     buildLinux amd64
   ;;
   *)
-    buildMacIcon
-    buildMac amd64
-    buildMac amd64 v3
-    buildMac arm64
-    macIconClear
     buildWin
   ;;
 esac
