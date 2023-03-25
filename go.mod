@@ -98,7 +98,4 @@ require (
 	lukechampine.com/blake3 v1.1.7 // indirect
 )
 
-replace (
-	github.com/getlantern/notifier => ../notifier
-	github.com/sagernet/sing-box => ../sing-box
-)
+
