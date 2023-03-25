@@ -92,7 +92,7 @@ github.com/getlantern/hex
 # github.com/getlantern/hidden v0.0.0-20190325191715-f02dbb02be55
 ## explicit
 github.com/getlantern/hidden
-# github.com/getlantern/notifier v0.0.0-20220715102006-f432f7e83f94 => ../notifier
+# github.com/getlantern/notifier v0.0.0-20220715102006-f432f7e83f94
 ## explicit; go 1.17
 github.com/getlantern/notifier
 github.com/getlantern/notifier/osx
@@ -300,7 +300,7 @@ github.com/sagernet/sing/protocol/http
 github.com/sagernet/sing/protocol/socks
 github.com/sagernet/sing/protocol/socks/socks4
 github.com/sagernet/sing/protocol/socks/socks5
-# github.com/sagernet/sing-box v1.0.3 => ../sing-box
+# github.com/sagernet/sing-box v1.0.3
 ## explicit; go 1.18
 github.com/sagernet/sing-box
 github.com/sagernet/sing-box/adapter
@@ -675,5 +675,5 @@ gvisor.dev/gvisor/pkg/waiter
 # lukechampine.com/blake3 v1.1.7
 ## explicit; go 1.13
 lukechampine.com/blake3
-# github.com/getlantern/notifier => ../notifier
-# github.com/sagernet/sing-box => ../sing-box
+# github.com/getlantern/notifier
+# github.com/sagernet/sing-box
