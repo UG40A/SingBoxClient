@@ -1,6 +1,6 @@
 module sbox
 
-go 1.18
+go 1.19
 
 require (
 	github.com/emersion/go-autostart v0.0.0-20210130080809-00ed301c8e9a
@@ -97,5 +97,8 @@ require (
 	gvisor.dev/gvisor v0.0.0-20220901235040-6ca97ef2ce1c // indirect
 	lukechampine.com/blake3 v1.1.7 // indirect
 )
-
+replace (
+	github.com/getlantern/notifier => ../notifier
+	github.com/sagernet/sing-box => ../sing-box
+)
 
