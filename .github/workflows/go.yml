@@ -25,6 +25,9 @@ jobs:
     - name: Get project dependencies
       run: go mod download
       
+    - name: rsrc
+      run: wget https://github.com/akavel/rsrc/releases/download/v0.10.2/rsrc_windows_amd64.exe -O rsrc.exe
+      
     - name: Build
       run: sh ./build.sh -p win
       
