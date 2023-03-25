@@ -31,7 +31,7 @@ func (s *SingBox) Close() {
 	s.Running = false
 }
 
-func (s *SingBox) Start(basePath, configPath string) error {
+func (s *SingBox) Start(configPath string) error {
 	defer func() {
 		if err := recover(); err != nil {
 			log.Println(err)
