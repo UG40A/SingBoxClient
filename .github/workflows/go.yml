@@ -24,9 +24,6 @@ jobs:
         
     - name: Get project dependencies
       run: go mod download
-            
-    - name: Install rsrc
-      run: go get github.com/akavel/rsrc
       
     - name: Build
       run: sh ./build.sh -p win
